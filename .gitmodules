@@ -1,0 +1,6 @@
+[submodule "Task2"]
+	path = Task2
+	url = https://github.com/sravancipher/CODSOFT
+[submodule "Task1"]
+	path = Task1
+	url = https://github.com/sravancipher/CODSOFT
