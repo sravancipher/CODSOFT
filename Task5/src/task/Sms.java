@@ -26,6 +26,24 @@ public class Sms {
 		}
 		
 	}
+	public void updateStudent(String id, String name, Integer roll_no, String branch, String room, String ph_no,String grade) throws SQLException {
+		Connection con=null;
+		PreparedStatement st=null;
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/api","root","mysql");
+			st=con.prepareStatement("update students set name='"+name+"',roll_no="+roll_no+", room='"+room+"',ph_no="+ph_no+",grade='"+grade+"' where id="+id+"");
+			st.executeUpdate();
+		 	System.out.println("Student Updated");
+		}
+		catch (Exception e){
+			System.out.println("Error occured" +e);
+		}
+		finally {
+			st.close();
+			con.close();
+		}
+	}
 
 	public void removeStudent(String id ) throws SQLException {
 		Connection con=null;
