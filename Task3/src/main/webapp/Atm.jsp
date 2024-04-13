@@ -10,7 +10,7 @@
   <label for="option4">Exit</label><br>
   <input type="submit"  value="Submit Transcation Type""/>
 </form>  
-<form action="/Atm_Interface/Atm" method="post" id="f"><div id="inputs"></div></form>
+<form action="/Task3/Atm" method="post" id="f"><div id="inputs"></div></form>
   <script>
   document.getElementById("f").addEventListener("submit",function(){
 	  setTimeout(function(){

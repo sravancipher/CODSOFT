@@ -32,7 +32,7 @@ public class Sms {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/api","root","mysql");
-			st=con.prepareStatement("update students set name='"+name+"',roll_no="+roll_no+", room='"+room+"',ph_no="+ph_no+",grade='"+grade+"' where id="+id+"");
+			st=con.prepareStatement("update students set name='"+name+"',roll_no="+roll_no+", room='"+room+"',ph_no="+ph_no+",grade='"+grade+"' where id='"+id+"'");
 			st.executeUpdate();
 		 	System.out.println("Student Updated");
 		}

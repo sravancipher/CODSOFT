@@ -1,5 +1,5 @@
 public class User_Account {
-	double balance=1000;
+	double balance=0;
 	public void withdraw(double amount) {
 		this.balance-=amount;
 	}
