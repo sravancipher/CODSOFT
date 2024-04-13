@@ -7,7 +7,7 @@ public class NumberGame {
 	public static void main(String[] args) {
 		boolean play=true;
 		int score=0;
-		Scanner input=new Scanner(System.in);
+//		Scanner input=new Scanner(System.in);
 		do {
 			int rand=(int) ((Math.random() * (101 - 1)) + 1);
 			System.out.println("Random number: "+rand);
